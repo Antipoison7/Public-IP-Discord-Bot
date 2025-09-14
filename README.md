@@ -27,8 +27,11 @@ Note: It is highly recommended to run this in a virtual environment such as venv
 - Have you added your token to the `.env` file
 - Have you added it to the `.env` instead of the `.env.template` file
 - Is it the right token?
+    - On the Discord developer portal, you can reset your token under the settings>Bot tab
 ### TypeError: expected token to be a str, recieved NoneType instead
 - Does the `.env` file exist in the same folder you are running the script from
 ### ModuleNotFoundError: No module named 'discord'
 - Have you installed the dependencies mentioned in `requirements.txt`
 - Have you activated your virtual environment if you installed the dependencies there
+### discord.errors.PrivilegedIntentsRequired
+- Under the settings>Bot tab, have you enabled `MESSAGE CONTENT INTENT`
