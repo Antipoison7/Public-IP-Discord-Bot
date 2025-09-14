@@ -44,6 +44,9 @@ async def public(ctx):
         if response.status_code == 404:
             await ctx.send("404 Error, I didn't even know this could happen")
         else:
+            with open("prev_ip.txt", "w") as file:
+                file.write(str(ip_string))
+            
             await ctx.send(f"Public IP: `{ip_string}`")
 
     except requests.Timeout:
