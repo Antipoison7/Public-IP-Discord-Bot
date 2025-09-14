@@ -18,6 +18,15 @@ Note: It is highly recommended to run this in a virtual environment such as venv
 4. Run it using the specified command for your os
     - Windows: `python ip_bot.py`
     - Linux: `python3 ip_bot.py`
+## Adding the bot
+1. Go to the discord developer portal
+2. Create a new bot
+3. Under the Bot tab, click Reset Token and copy that token
+4. Add that token to your .env file
+5. Under the OAuth2 tab, scroll down until you find the OAuth2 URL Generator
+6. Check the `bot` box
+7. Check the `Send Messages` box
+8. Copy the generated URL and load it in your web browser to invite the bot to any servers you have permissions in
 ## Troubleshooting
 ### 'python' is not recognized as an internal or external command
 - Ensure python is added to your PATH
